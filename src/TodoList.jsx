@@ -1,11 +1,11 @@
 import React from "react";
 
-const TodoList = (props) => {
+const TodoList = ({todos,onRemoveTodo}) => {
   return (
     <div>
       <ul>
-        {props.todos.map((todo, id) => (
-          <li key={id} onDoubleClick={() => props.onRemoveTodo(id)}>
+        {todos.map((todo, id) => (
+          <li key={id} onDoubleClick={() => onRemoveTodo(id)}>
             {todo}
           </li>
         ))}

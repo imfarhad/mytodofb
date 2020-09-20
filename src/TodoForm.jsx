@@ -1,9 +1,9 @@
 import React from "react";
 
-const TodoForm = (props) => {
+const TodoForm = ({onAddTodo}) => {
   const onClickHandler = () => {
     let todoItem = document.getElementById("todoItem").value;
-    props.onAddTodo(todoItem);
+    onAddTodo(todoItem);
     document.getElementById("todoItem").value = "";
   };
   return (
