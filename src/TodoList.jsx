@@ -1,9 +1,15 @@
-import React from 'react';
+import React from "react";
 
-const TodoList = () => {
-    return(
-        <div>The todo list will be shown here</div>
-    )
-}
+const TodoList = (props) => {
+  return (
+    <div>
+      <ul>
+        {props.todos.map((todo, id) => (
+          <li key={id}>{todo}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 export default TodoList;
