@@ -5,7 +5,9 @@ const TodoList = (props) => {
     <div>
       <ul>
         {props.todos.map((todo, id) => (
-          <li key={id}>{todo}</li>
+          <li key={id} onDoubleClick={() => props.onRemoveTodo(id)}>
+            {todo}
+          </li>
         ))}
       </ul>
     </div>

@@ -8,12 +8,16 @@ const TodoApp = () => {
   const onAddTodo = (todoItem) => {
     setTodos([...todos, todoItem]);
   };
+  const onRemoveTodo = (id) => {
+    todos.splice(id, 1);
+    setTodos([...todos]);
+  };
 
   return (
     <div>
       <div>Todo App</div>
       <TodoForm onAddTodo={onAddTodo} />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} onRemoveTodo={onRemoveTodo} />
     </div>
   );
 };
