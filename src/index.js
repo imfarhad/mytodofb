@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import FbTodoList from './FbTodoList';
 import './index.css';
+import RbTodoList from './RbTodoList';
 import * as serviceWorker from './serviceWorker';
 import TodoApp from './TodoApp';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FbTodoList />
+    <RbTodoList />
   </React.StrictMode>,
   document.getElementById('root')
 );
