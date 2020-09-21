@@ -1,13 +1,49 @@
-[debug] [2020-09-19T05:40:10.517Z] ----------------------------------------------------------------------
-[debug] [2020-09-19T05:40:10.519Z] Command:       C:\tools\nodejs\node.exe C:\Users\fakhr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2020-09-19T05:40:10.519Z] CLI Version:   8.10.0
-[debug] [2020-09-19T05:40:10.519Z] Platform:      win32
-[debug] [2020-09-19T05:40:10.519Z] Node Version:  v12.13.1
-[debug] [2020-09-19T05:40:10.521Z] Time:          Sat Sep 19 2020 08:40:10 GMT+0300 (Eastern European Summer Time)
-[debug] [2020-09-19T05:40:10.521Z] ----------------------------------------------------------------------
-[debug] [2020-09-19T05:40:10.521Z] 
-[debug] [2020-09-19T05:40:10.528Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-09-19T05:40:10.528Z] > authorizing via signed-in user
+[debug] [2020-09-20T09:35:25.454Z] ----------------------------------------------------------------------
+[debug] [2020-09-20T09:35:25.456Z] Command:       C:\tools\nodejs\node.exe C:\Users\fakhr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list
+[debug] [2020-09-20T09:35:25.457Z] CLI Version:   8.10.0
+[debug] [2020-09-20T09:35:25.457Z] Platform:      win32
+[debug] [2020-09-20T09:35:25.457Z] Node Version:  v12.13.1
+[debug] [2020-09-20T09:35:25.458Z] Time:          Sun Sep 20 2020 12:35:25 GMT+0300 (Eastern European Summer Time)
+[debug] [2020-09-20T09:35:25.458Z] ----------------------------------------------------------------------
+[debug] [2020-09-20T09:35:25.458Z] 
+[debug] [2020-09-20T09:35:25.465Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-20T09:35:25.465Z] > authorizing via signed-in user
+[debug] [2020-09-20T09:35:25.472Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-09-20T09:35:25.473Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-09-20T09:35:25.614Z] <<< HTTP RESPONSE 400 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 20 Sep 2020 09:35:25 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-20T09:35:25.616Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=1000  
+ 
+[debug] [2020-09-20T09:35:25.731Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Sun, 20 Sep 2020 09:35:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-20T09:35:25.731Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2020-09-20T09:35:25.732Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2020-09-20T09:35:25.828Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\Users\fakhr\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\fakhr\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\fakhr\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:210:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at Request.<anonymous> (C:\Users\fakhr\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:210:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at IncomingMessage.<anonymous> (C:\Users\fakhr\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:299:28)
+    at IncomingMessage.emit (events.js:215:7)
+    at IncomingMessage.EventEmitter.emit (domain.js:475:20)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2020-09-20T10:15:35.896Z] ----------------------------------------------------------------------
+[debug] [2020-09-20T10:15:35.898Z] Command:       C:\tools\nodejs\node.exe C:\Users\fakhr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-09-20T10:15:35.898Z] CLI Version:   8.10.0
+[debug] [2020-09-20T10:15:35.898Z] Platform:      win32
+[debug] [2020-09-20T10:15:35.898Z] Node Version:  v12.13.1
+[debug] [2020-09-20T10:15:35.900Z] Time:          Sun Sep 20 2020 13:15:35 GMT+0300 (Eastern European Summer Time)
+[debug] [2020-09-20T10:15:35.900Z] ----------------------------------------------------------------------
+[debug] [2020-09-20T10:15:35.900Z] 
+[debug] [2020-09-20T10:15:35.920Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-20T10:15:35.921Z] > authorizing via signed-in user
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -30,29 +66,4 @@ Before we get started, keep in mind:
 [info] You can create multiple project aliases by running firebase use --add, 
 [info] but for now we'll just set up a default project.
 [info] 
-[debug] [2020-09-19T05:41:22.967Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2020-09-19T05:41:22.968Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2020-09-19T05:41:23.123Z] <<< HTTP RESPONSE 400 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 19 Sep 2020 05:41:22 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2020-09-19T05:41:23.124Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
- 
-[debug] [2020-09-19T05:41:23.252Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Sat, 19 Sep 2020 05:41:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2020-09-19T05:41:23.252Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
-[debug] [2020-09-19T05:41:23.253Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
-[debug] [2020-09-19T05:41:23.369Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
-    at module.exports (C:\Users\fakhr\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
-    at Request._callback (C:\Users\fakhr\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
-    at Request.self.callback (C:\Users\fakhr\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
-    at Request.emit (events.js:210:5)
-    at Request.EventEmitter.emit (domain.js:475:20)
-    at Request.<anonymous> (C:\Users\fakhr\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
-    at Request.emit (events.js:210:5)
-    at Request.EventEmitter.emit (domain.js:475:20)
-    at IncomingMessage.<anonymous> (C:\Users\fakhr\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
-    at Object.onceWrapper (events.js:299:28)
-    at IncomingMessage.emit (events.js:215:7)
-    at IncomingMessage.EventEmitter.emit (domain.js:475:20)
-    at endReadableNT (_stream_readable.js:1184:12)
-    at processTicksAndRejections (internal/process/task_queues.js:80:21)
-[error] 
-[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 

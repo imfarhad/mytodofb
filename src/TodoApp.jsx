@@ -5,9 +5,11 @@ import TodoList from "./TodoList";
 const TodoApp = () => {
   const initialTodos = [];
   const [todos, setTodos] = useState(initialTodos);
+
   const onAddTodo = (todoItem) => {
     setTodos([...todos, todoItem]);
   };
+
   const onRemoveTodo = (id) => {
     todos.splice(id, 1);
     setTodos([...todos]);
